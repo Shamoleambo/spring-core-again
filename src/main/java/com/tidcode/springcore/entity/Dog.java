@@ -7,6 +7,10 @@ import org.springframework.stereotype.Component;
 @Primary
 public class Dog implements Animal {
 
+	public Dog() {
+		System.out.println("Inside Dog");
+	}
+
 	public String speak() {
 		return "Au au!";
 	}

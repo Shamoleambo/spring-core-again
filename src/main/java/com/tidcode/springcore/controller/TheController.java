@@ -18,10 +18,10 @@ public class TheController {
 	public String getAnimalSound() {
 		return this.animal.speak();
 	}
-
+	
 	@Autowired
 	public void setAnimal(@Qualifier("cat") Animal animal) {
 		this.animal = animal;
 	}
-
+	
 }
