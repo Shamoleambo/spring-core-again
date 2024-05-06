@@ -13,14 +13,14 @@ public class TheController {
 
 	private Animal animal;
 
-	@Autowired
-	public TheController(Animal animal) {
-		this.animal = animal;
-	}
-
 	@GetMapping("/animal")
 	public String getAnimalSound() {
 		return this.animal.speak();
+	}
+
+	@Autowired
+	public void setAnimal(Animal animal) {
+		this.animal = animal;
 	}
 
 }
