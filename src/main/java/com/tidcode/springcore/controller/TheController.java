@@ -26,7 +26,7 @@ public class TheController {
 	}
 
 	@Autowired
-	public void setAnimal1(@Qualifier("dog") Animal animal1) {
+	public void setAnimal1(@Qualifier("bird") Animal animal1) {
 		this.animal1 = animal1;
 	}
 
